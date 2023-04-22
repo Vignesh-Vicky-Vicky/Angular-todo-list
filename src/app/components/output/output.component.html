@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="wrapper">
+        <ul class="todos">
+            <li ngClass="todo {{ todo.completed ? 'completed' : '' }}" *ngFor="let todo of todoLists; let i = index">
+                <span>{{ i }} .</span>
+                <p>{{ todo.content }}</p>
+                <button class="not-completed" *ngIf="todo.completed" (click)="changeStatus(i)"> Not Completd </button>
+                <button class="completed" *ngIf="!todo.completed" (click)="changeStatus(i)">Completed</button>
+                <button class="delete" (click)="deleteTodo(i)">Delete</button>
+            </li>
+        </ul>
+    </div>
+</div>

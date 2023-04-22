@@ -1,0 +1,57 @@
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    background: #9933CC;
+    padding: 12px 24px;
+    border: 1px solid #4B515D;
+    border-radius: 6px;
+}
+
+ul li.completed {
+    background: #00695c;
+}
+
+ul li span {
+    margin-right: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+ul li p {
+    flex-grow: 1;
+    font-size: 20px;
+    font-size: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+ul li button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-left: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+ul li button:active {
+    filter: saturate(0.6);
+}
+
+ul li button.delete {
+    background: #CC0000;
+}
+
+ul li button.completed {
+    background: #007E33;
+}
+
+ul li button.not-completed {
+    background: #FF8800;
+}

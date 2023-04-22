@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="wrapper">
+        <form>
+            <input type="text" autocomplete="off" placeholder="Enter Todo" name="todoInput" [(ngModel)]="inputData">
+            <button type="submit" [disabled]="!inputData" (click)="getInputValue()">Add</button>
+        </form>
+    </div>
+</div>
